@@ -3,6 +3,7 @@ const nodeExternals = require("webpack-node-externals");
 
 module.exports = {
   entry: slsw.lib.entries,
+  stats: 'minimal',
   target: "node",
   // Generate sourcemaps for proper error messages
   devtool: 'source-map',
@@ -30,4 +31,3 @@ module.exports = {
     ]
   }
 };
-
